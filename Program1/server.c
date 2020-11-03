@@ -41,13 +41,9 @@ int main()
         }
     if(flag==1)
         while((cont=read(fd, buffer, bufsize))>0) 
-        {
             send(new_socket,buffer,cont,0);
-        }
     else
-    {
         send(new_socket,"##",cont,0);
-    }
     
 
     printf("Request Completed\n");
