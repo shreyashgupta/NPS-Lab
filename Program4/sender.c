@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 struct sockaddr_in addr;
 int fd, cnt;
-struct ip_mreq mreq;
 char *message="RVCE-CSE";
 /* create what looks like an ordinary UDP socket */
 if ((fd=socket(AF_INET,SOCK_DGRAM,0)) < 0) {
